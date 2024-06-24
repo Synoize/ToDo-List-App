@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.2/css/all.min.css"
+        integrity="sha512-SnH5WK+bZxgPHs44uWIX+LLJAJ9/2PkPKZ5QiAj6Ta86w+fsb2TkcmfRyVX3pBnMFcV7oQPJkl9QevSCWr3W6A=="
+        crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <script src="https://cdn.tailwindcss.com"></script>
+    <title>ToDo App</title>
+</head>
+<body>
+    <main class="flex justify-center bg-yellow-50 sm:bg-white sm:p-1">
+
+        <div id="main-container" class="flex flex-col justify-between p-2 bg-yellow-50 sm:border-2">
+
+            <nav id="header">
+                <div id="app-logo">
+                    <img src="app.png"><label for="app-logo" class="text-2xl text-gray-500">TexTist</label>
+                </div>
+
+                <div>
+                    <span id="task-btn" title="Create Task" class="border rounded-full p-1 px-2 cursor-pointer">
+                        <i class="fa-solid fa-plus fa-sm"></i>
+                    </span>
+                    <div id="task-box" class="bg-yellow-50">
+                        <textarea id="write-task" placeholder="Tap Enter to create subtasks"
+                            class="p-2 outline-none bg-white border-2"></textarea>
+
+                        <ul id="task-list"></ul>
+                    </div>
+                </div>
+            </nav>
+
+            <textarea id="content" placeholder="Start Typing . . ."
+                class="p-2 outline-none bg-white border-2"></textarea>
+
+            <ul id="todo-list"></ul>
+
+        </div>
+    </main>
+
+    <script src="app.js"></script>
+</body>
+
+</html>

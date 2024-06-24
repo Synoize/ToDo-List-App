@@ -1,0 +1,141 @@
+#header {
+    width: 100%;
+    height: 6vh;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin-bottom: 8px;
+}
+
+#app-logo {
+    display: flex;
+    flex-direction: row;
+    justify-content: left;
+    align-items: flex-end;
+    gap: 8px;
+}
+
+img {
+    width: 40px;
+    height: 20px;
+    object-fit: contain;
+}
+
+#main-container {
+    width: 320px;
+    height: 100vh;
+    position: relative;
+    overflow: hidden;
+}
+
+@media screen and (min-width: 319px) {
+    #main-container {
+        width: 320px;
+    }
+}
+
+@media screen and (min-width: 374px) {
+    #main-container {
+        width: 375px;
+    }
+}
+
+@media screen and (min-width: 424px) {
+    #main-container {
+        width: 424px;
+    }
+}
+
+#content {
+    height: 35vh;
+    font-size: 14px;
+    text-wrap: wrap;
+    scrollbar-width: none;
+}
+
+#todo-list,
+#task-list {
+    height: 52vh;
+    overflow-y: scroll;
+    scrollbar-width: none;
+    scroll-behavior: smooth;
+
+}
+
+#todo-list>li,
+#task-list>li {
+    height: 80px;
+    margin-top: 8px;
+    border-radius: 0.8rem;
+    font-size: 12px;
+    padding: 6px;
+    text-align: justify;
+    border: 1px solid rgb(205, 205, 205);
+    background-color: rgb(255, 255, 255);
+    overflow: hidden;
+}
+
+.task-btn {
+    background-color: rgb(255, 153, 0);
+    color: white;
+}
+
+.close-task {
+    visibility: hidden;
+}
+
+#task-box {
+    margin-top: 4vh;
+    margin-left: -277px;
+    width: 320px;
+    height: 90vh;
+    border-right: none;
+    position: absolute;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    padding: 8px;
+
+}
+
+#write-task {
+    height: 10vh;
+    width: 100%;
+    font-size: 12px;
+    text-wrap: wrap;
+    scrollbar-width: none;
+}
+
+#task-list {
+    height: 76vh;
+}
+
+#task-list>li {
+    height: 8vh;
+}
+
+.task-done {
+    text-decoration: line-through;
+}
+
+@media screen and (min-width: 319px) and (max-width: 374px) {
+    #task-box {
+        margin-top: 4vh;
+        margin-left: -238px;
+        width: 280px;
+    }
+}
+
+@media screen and (min-width: 1090px) {
+    #main-container {
+        overflow: visible;
+    }
+
+    #task-box {
+        margin-top: 2vh;
+        margin-left: 45px;
+        height: 91.4vh;
+        border: 2px solid rgb(235, 235, 235);
+        border-left: none;
+    }
+}
