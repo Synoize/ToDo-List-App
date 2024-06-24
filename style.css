@@ -123,6 +123,7 @@ img {
         margin-top: 4vh;
         margin-left: -238px;
         width: 280px;
+        border-left: 1px solid rgb(235, 235, 235);
     }
 }
 
@@ -136,6 +137,5 @@ img {
         margin-left: 45px;
         height: 91.4vh;
         border: 2px solid rgb(235, 235, 235);
-        border-left: none;
     }
 }
