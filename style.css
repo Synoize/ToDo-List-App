@@ -64,15 +64,16 @@ img {
 
 #todo-list>li,
 #task-list>li {
-    height: 80px;
+    height: auto;
     margin-top: 8px;
     border-radius: 0.8rem;
     font-size: 12px;
-    padding: 6px;
+    padding: 10px;
     text-align: justify;
     border: 1px solid rgb(205, 205, 205);
     background-color: rgb(255, 255, 255);
     overflow: hidden;
+    cursor: pointer;
 }
 
 .task-btn {

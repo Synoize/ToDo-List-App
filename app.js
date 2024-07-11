@@ -17,10 +17,8 @@ function addToDo(val) {
     todoItem.innerHTML = `${val}`;
     todoList.appendChild(todoItem);
     console.log(val)
-
-    todoItem.addEventListener("click", function () {
-        this.style = "height:auto; background-color:rgb(247, 247, 247);"
-    })
+    todoItem.style= "height:auto;"
+    
 }
 
 taskBtn.addEventListener("click", () => {
@@ -37,12 +35,13 @@ writeTask.addEventListener("keyup", function (e) {
 
 function addTask(val) {
     let task = document.createElement("li");
+    
     task.innerHTML = `${val}`;
     taskList.appendChild(task);
     console.log(val)
+    task.style= "height:auto;"
 
     task.addEventListener("click", function () {
-        this.style = "height:auto; background-color:rgb(247, 247, 247);"
         this.classList.toggle('task-done')
     })
 }
